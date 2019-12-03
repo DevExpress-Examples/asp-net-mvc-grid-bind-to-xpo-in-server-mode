@@ -8,6 +8,9 @@
 * [Index.cshtml](./CS/E2836/Views/Home/Index.cshtml) (VB: [Index.vbhtml](./VB/E2836/Views/Home/Index.vbhtml))
 <!-- default file list end -->
 # How to bind GridView to XPO in Server Mode
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e2836/)**
+<!-- run online end -->
 
 
 <p>The example demonstrates how to bind the GridView extension to a LINQ to XPO data source using the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebMvcGridViewExtension_BindToLINQtopic"><u>GridViewExtension.BindToLINQ</u></a> method.</p><p><strong>See also:<br />

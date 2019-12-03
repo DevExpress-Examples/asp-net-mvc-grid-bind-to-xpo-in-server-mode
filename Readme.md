@@ -1,11 +1,11 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
-* [XpoHelper.cs](./CS/Helper/XpoHelper.cs) (VB: [XpoHelper.vb](./VB/Helper/XpoHelper.vb))
-* [MyObject.cs](./CS/Models/MyObject.cs) (VB: [MyObject.vb](./VB/Models/MyObject.vb))
-* [GridViewPartial.ascx](./CS/Views/Home/GridViewPartial.ascx) (VB: [GridViewPartial.ascx](./VB/Views/Home/GridViewPartial.ascx))
-* [Index.aspx](./CS/Views/Home/Index.aspx) (VB: [Index.aspx](./VB/Views/Home/Index.aspx))
+* [HomeController.cs](./CS/E2836/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E2836/Controllers/HomeController.vb))
+* [XpoHelper.cs](./CS/E2836/Helpers/XpoHelper.cs) (VB: [XpoHelper.vb](./VB/E2836/Helpers/XpoHelper.vb))
+* [MyObject.cs](./CS/E2836/Models/MyObject.cs) (VB: [MyObject.vb](./VB/E2836/Models/MyObject.vb))
+* [_GridViewPartial.cshtml](./CS/E2836/Views/Home/_GridViewPartial.cshtml) (VB: [GridViewPartial.vbhtml](./VB/E2836/Views/Home/_GridViewPartial.vbhtml))
+* [Index.cshtml](./CS/E2836/Views/Home/Index.cshtml) (VB: [Index.vbhtml](./VB/E2836/Views/Home/Index.vbhtml))
 <!-- default file list end -->
 # How to bind GridView to XPO in Server Mode
 

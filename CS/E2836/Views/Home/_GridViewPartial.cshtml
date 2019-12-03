@@ -1,0 +1,19 @@
+﻿@using E2836.Models
+@using E2836.Helpers
+@Html.DevExpress().GridView(settings =>
+{
+    settings.Name = "gvDataBindingToLinq";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+    settings.KeyFieldName = "Oid";
+    settings.Width = Unit.Percentage(100);
+    settings.Settings.ShowFilterRow = true;
+    settings.Settings.ShowGroupPanel = true;
+    settings.Settings.ShowFooter = true;
+
+    settings.Columns.Add("Title", MVCxGridViewColumnType.TextBox).Width = Unit.Percentage(70);
+}).BindToLINQ(string.Empty, string.Empty, (s, e) => {
+    e.KeyExpression = "Oid";
+    DevExpress.Xpo.Session session = XpoHelper.GetNewSession();
+    DevExpress.Xpo.XPQuery<MyObject> query = new DevExpress.Xpo.XPQuery<MyObject>(session);
+    e.QueryableSource = query;
+}).GetHtml()

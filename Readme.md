@@ -3,25 +3,30 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2836)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [HomeController.cs](./CS/E2836/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E2836/Controllers/HomeController.vb))
-* [XpoHelper.cs](./CS/E2836/Helpers/XpoHelper.cs) (VB: [XpoHelper.vb](./VB/E2836/Helpers/XpoHelper.vb))
-* [MyObject.cs](./CS/E2836/Models/MyObject.cs) (VB: [MyObject.vb](./VB/E2836/Models/MyObject.vb))
-* [_GridViewPartial.cshtml](./CS/E2836/Views/Home/_GridViewPartial.cshtml) (VB: [GridViewPartial.vbhtml](./VB/E2836/Views/Home/_GridViewPartial.vbhtml))
-* [Index.cshtml](./CS/E2836/Views/Home/Index.cshtml) (VB: [Index.vbhtml](./VB/E2836/Views/Home/Index.vbhtml))
-<!-- default file list end -->
-# How to bind GridView to XPO in Server Mode
+# # Grid View for ASP.NET MVC - How to bind grid to XPO in server mode
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e2836/)**
 <!-- run online end -->
 
+The example demonstrates how to use the [GridViewExtension.BindToLINQ](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.GridViewExtension.BindToLINQ.overloads) method to bind the [GridView](https://docs.devexpress.com/AspNetMvc/8966/components/grid-view) extension to a **LINQ to XPO** data source.
 
-<p>The example demonstrates how to bind the GridView extension to a LINQ to XPO data source using the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebMvcGridViewExtension_BindToLINQtopic"><u>GridViewExtension.BindToLINQ</u></a> method.</p><p><strong>See also:<br />
-</strong><a href="https://www.devexpress.com/Support/Center/p/S36565">Provide with GridView extension method to bind it to XPO in Server Mode</a><br />
-<a href="https://www.devexpress.com/Support/Center/p/K18525">How to use XPO in an ASP.NET MVC application</a></p>
+```csharp
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "gvDataBindingToLinq";
+    // ...
+}).BindToLINQ(string.Empty, string.Empty, (s, e) => {
+    e.KeyExpression = "Oid";
+    DevExpress.Xpo.Session session = XpoHelper.GetNewSession();
+    DevExpress.Xpo.XPQuery<MyObject> query = new DevExpress.Xpo.XPQuery<MyObject>(session);
+    e.QueryableSource = query;
+}).GetHtml()
+```
 
-<br/>
+## Files to Review
 
+* [_GridViewPartial.cshtml](./CS/E2836/Views/Home/_GridViewPartial.cshtml) (VB: [GridViewPartial.vbhtml](./VB/E2836/Views/Home/_GridViewPartial.vbhtml))
 
+## Documentation
+
+* [XPO Tutorials - ASP.NET](https://github.com/DevExpress/XPO/tree/master/Tutorials/ASP.NET)

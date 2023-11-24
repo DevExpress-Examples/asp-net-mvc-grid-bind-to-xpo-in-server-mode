@@ -4,12 +4,12 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# # Grid View for ASP.NET MVC - How to bind grid to XPO in server mode
+# Grid View for ASP.NET MVC - How to bind grid to XPO in server mode
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e2836/)**
 <!-- run online end -->
 
-The example demonstrates how to use the [GridViewExtension.BindToLINQ](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.GridViewExtension.BindToLINQ.overloads) method to bind the [GridView](https://docs.devexpress.com/AspNetMvc/8966/components/grid-view) extension to a **LINQ to XPO** data source.
+This example demonstrates how to use the [GridViewExtension.BindToLINQ](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.GridViewExtension.BindToLINQ.overloads) method to bind the [GridView](https://docs.devexpress.com/AspNetMvc/8966/components/grid-view) extension to a **LINQ to XPO** data source.
 
 ```csharp
 @Html.DevExpress().GridView(settings => {

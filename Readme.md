@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Grid View for ASP.NET MVC - How to bind grid to XPO in server mode
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128551127/)**
-<!-- run online end -->
 
 This example demonstrates how to use the [GridViewExtension.BindToLINQ](https://docs.devexpress.com/AspNetMvc/DevExpress.Web.Mvc.GridViewExtension.BindToLINQ.overloads) method to bind the [GridView](https://docs.devexpress.com/AspNetMvc/8966/components/grid-view) extension to a **LINQ to XPO** data source.
 

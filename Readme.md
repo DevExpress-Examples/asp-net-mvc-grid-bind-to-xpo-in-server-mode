@@ -29,7 +29,7 @@ This example demonstrates how to use the [GridViewExtension.BindToLINQ](https://
 
 * [XPO Tutorials - ASP.NET](https://github.com/DevExpress/XPO/tree/master/Tutorials/ASP.NET)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-bind-to-xpo-in-server-mode&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-bind-to-xpo-in-server-mode&~~~was_helpful=no)
 
